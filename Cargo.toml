@@ -1,0 +1,11 @@
+[package]
+name = "learn_rest"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.8.9"
+tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread", "net", "rt"] }
+sqlx = {version = "0.9.0", features = ["runtime-tokio", "postgres", "macros", "tls-native-tls"]}
+serde = {version = "1.0.229", features = ["derive"]}
+axum-swagger-ui = "0.3.0"

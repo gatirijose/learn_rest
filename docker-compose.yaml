@@ -1,0 +1,13 @@
+services:
+  app:
+    container_name: learn_rest
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+#  learn_rest:
+#    build: .
+#    container_name: learn_rest
+#    ports:
+#      - "8000:8000"
